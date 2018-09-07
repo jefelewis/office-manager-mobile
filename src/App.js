@@ -7,11 +7,15 @@ import { createStore } from 'redux';
 // Imports: Components
 
 
+// Imports: Reducers
+import reducers from './reducers';
+
+
 // React Native Component
 class App extends Component {
   render() {
     return (
-      <Provider store={createStore()}>
+      <Provider store={createStore(reducers)}>
         <View>
           <Text>
            Hello

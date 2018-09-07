@@ -4,4 +4,4 @@ import App from './src/App';
 
 
 // React Native: Register Component
-AppRegistry.registerComponent('manager', () => App);
+AppRegistry.registerComponent('OfficeManagerMobile', () => App);
