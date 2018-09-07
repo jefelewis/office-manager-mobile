@@ -1,4 +1,4 @@
-package com.manager;
+package com.officemanagermobile;
 
 import android.app.Application;
 

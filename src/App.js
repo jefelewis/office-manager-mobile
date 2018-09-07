@@ -11,7 +11,7 @@ import { createStore } from 'redux';
 class App extends Component {
   render() {
     return (
-      <Provider>
+      <Provider store={createStore()}>
         <View>
           <Text>
            Hello

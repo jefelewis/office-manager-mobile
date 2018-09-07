@@ -1,5 +1,5 @@
 {
-  "name": "manager",
+  "name": "OfficeManagerMobile",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -7,10 +7,9 @@
     "test": "jest"
   },
   "dependencies": {
-    "react": "16.4.1",
+    "react": "^16.4.1",
     "react-native": "0.56.0",
-    "react-redux": "^5.0.7",
-    "redux": "^4.0.0"
+    "react-redux": "^5.0.7"
   },
   "devDependencies": {
     "babel-jest": "23.4.2",
