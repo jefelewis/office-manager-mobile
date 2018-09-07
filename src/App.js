@@ -17,7 +17,6 @@ import reducers from './reducers';
 
 // React Native Component
 class App extends Component {
-
   componentWillMount() {
     firebase.initializeApp(firebaseConfig);
   }
