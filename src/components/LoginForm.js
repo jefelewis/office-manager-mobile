@@ -1,15 +1,24 @@
 // Imports: Dependencies
 import React, { Component } from 'react';
 import { StyleSheet } from 'react-native';
-import { Card, CardSection, Input, Button } from './common';
+import { connect } from 'react-redux';
+import {
+  Card, CardSection, Input, Button,
+} from './common';
+
+// Imports: Redux
+import { emailChanged } from '../actions';
 
 
 // React Native Component
 class LoginForm extends Component {
-  componentWillMount() {
-    console.log('Login Form Mounted');
+
+  // Field Changes: Email
+  onEmailChange(text) {
+    this.props.emailChanged(text);
   }
 
+  // Render
   render() {
     return (
       <Card style={styles.cardStyle}>
@@ -17,6 +26,7 @@ class LoginForm extends Component {
           <Input
             label="Email"
             placeholder="Email"
+            onChangeText={this.onEmailChange.bind(this)}
           />
         </CardSection>
 
@@ -47,4 +57,4 @@ const styles = StyleSheet.create({
 
 
 // Exports
-export default LoginForm;
+export default connect(null, { emailChanged })(LoginForm);
