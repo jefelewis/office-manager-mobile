@@ -4,9 +4,11 @@ import { View, Text } from 'react-native';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import firebase from 'firebase';
+import { Header } from 'native-base';
 import firebaseConfig from '../config/config';
 
 // Imports: Components
+// import { Header } from './components/common';
 import LoginForm from './components/LoginForm';
 
 // Imports: Reducers
@@ -23,7 +25,10 @@ class App extends Component {
   render() {
     return (
       <Provider store={createStore(reducers)}>
-        <LoginForm />
+        <View>
+          <Header />
+          <LoginForm />
+        </View>
       </Provider>
     );
   }
