@@ -7,7 +7,7 @@ import firebase from 'firebase';
 import firebaseConfig from '../config/config';
 
 // Imports: Components
-
+import LoginForm from './components/LoginForm';
 
 // Imports: Reducers
 import reducers from './reducers';
@@ -23,11 +23,7 @@ class App extends Component {
   render() {
     return (
       <Provider store={createStore(reducers)}>
-        <View>
-          <Text>
-           Hello
-          </Text>
-        </View>
+        <LoginForm />
       </Provider>
     );
   }
